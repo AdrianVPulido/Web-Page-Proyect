@@ -1,0 +1,19 @@
+#bga {
+  background-color: #0CA1A7;
+  color: inherit;
+}
+
+#gal{
+text-align: center;
+font-size: 300%;
+}
+
+.myModal{
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,.3);
+	position:fixed;
+	top:0;
+	left:0;
+	display:none;
+}

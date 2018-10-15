@@ -1,0 +1,25 @@
+#bcz {
+  background-color: #0CA1A7;
+  color: inherit;
+}
+
+.hcz {
+  text-align: center;
+  font-size: 300%;
+}
+
+.pcz {
+  text-align: justify;
+  font-size: 120%;
+}
+
+#myScrollspy {
+  position: fixed;
+  display: block;
+  margin-top: 2%;
+  left: 2%;
+}
+
+.cuerpogeneral {
+
+}

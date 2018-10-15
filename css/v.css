@@ -1,0 +1,23 @@
+#bv {
+  background-color: #0CA1A7;
+  color: inherit;
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+}
+
+#vid{
+text-align: center;
+font-size: 300%;
+margin-bottom: 50px;
+}
+
+#vid2{
+text-align: center;
+font-size: 250%;
+margin-bottom: 50px;
+margin-left: 25%;
+}
+
+#video {
+  display: block;
+}

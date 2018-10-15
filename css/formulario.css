@@ -1,0 +1,41 @@
+
+#formbody {
+  background-color: #0CA1A7;
+  color: inherit;
+}
+
+#usuario {
+}
+
+#obligatorio {
+  display: none;
+}
+
+#obligatorio1 {
+  display: none;
+}
+
+#obligatorio2 {
+  display: none;
+}
+
+#obligatorio3 {
+  display: none;
+}
+
+#obligatorio4 {
+  display: none;
+}
+
+#obligatorio5 {
+  display: none;
+}
+
+
+#sexo {
+  text-align: center;
+}
+
+#tabladatos {
+  text-align: center;
+}

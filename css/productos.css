@@ -1,0 +1,26 @@
+body {
+  background-color: #0CA1A7;
+  color: inherit;
+  padding-top: 65px;
+}
+
+img {
+  height:140px;
+  width:140px;
+}
+
+.cabeceraProducto{
+    border-bottom-style: double;
+    border-bottom-width: 1px;
+    border-bottom-color: white;
+    background-color: blue;
+    color:white;
+}
+
+.imagenFix{
+    min-height: 140px;
+}
+
+.espaciador{
+    min-height: 30px;
+}

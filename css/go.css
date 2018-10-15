@@ -1,0 +1,27 @@
+#bgo {
+  background-color: #0CA1A7;
+  color: inherit;
+}
+
+
+.hgo {
+  text-align: center;
+  font-size: 300%;
+}
+
+.pgo {
+  text-align: justify;
+  font-size: 120%;
+}
+
+#myScrollspy {
+  position: fixed;
+  display: block;
+  left: 2%;
+  margin-top: 2%;
+}
+
+.cuerpogeneral {
+  padding-left: 5%;
+  padding-right: 7%;
+}

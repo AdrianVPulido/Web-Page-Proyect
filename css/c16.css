@@ -1,0 +1,31 @@
+#b16 {
+  background-color: #0CA1A7;
+  color: inherit;
+}
+
+.h16 {
+  text-align: center;
+  font-size: 300%;
+}
+
+.p16 {
+  text-align: justify;
+  font-size: 120%;
+}
+
+#armas {
+  text-align: center;
+  font-size: 300%;
+}
+
+#armasp {
+  text-align: justify;
+  font-size: 120%;
+}
+
+#myScrollspy {
+  position: fixed;
+  display: block;
+  left: 2%;
+  margin-top: 2%;
+}

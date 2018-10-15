@@ -1,0 +1,86 @@
+#bindex {
+  background-image: url(../img/inicio.jpg);
+  background-attachment: fixed;
+  background-size: auto;
+
+}
+
+#binfo {
+  background-color: #0CA1A7;
+  color: inherit;
+}
+
+
+#hud {
+  float: right;
+}
+
+#h11 {
+  text-align: center;
+  font-size: 300%;
+}
+
+#h12 {
+  text-align: center;
+  font-size: 300%;
+}
+
+#h13 {
+  text-align: center;
+  font-size: 300%;
+}
+
+#h14 {
+  text-align: center;
+  font-size: 300%;
+}
+
+#h15 {
+  text-align: center;
+  font-size: 300%;
+}
+
+#p11 {
+  text-align: justify;
+  font-size: 120%;
+}
+
+#p12 {
+  text-align: justify;
+  font-size: 120%;
+}
+
+#p13 {
+  text-align: justify;
+  font-size: 120%;
+}
+
+#p14 {
+  text-align: justify;
+  font-size: 120%;
+}
+
+#p15 {
+  text-align: justify;
+  font-size: 120%;
+}
+
+#p16 {
+  text-align: justify;
+  font-size: 120%;
+}
+
+#p17 {
+  text-align: justify;
+  font-size: 120%;
+}
+
+#p18 {
+  text-align: justify;
+  font-size: 120%;
+}
+
+#p19 {
+  text-align: justify;
+  font-size: 120%;
+}

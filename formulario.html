@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="css/formulario.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/formulario.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBLIi5iVZT-blxClb4u26kG4gamf5dS9Lw",
+    authDomain: "formulario-lnd.firebaseapp.com",
+    databaseURL: "https://formulario-lnd.firebaseio.com",
+    projectId: "formulario-lnd",
+    storageBucket: "formulario-lnd.appspot.com",
+    messagingSenderId: "871054510794"
+  };
+  firebase.initializeApp(config);
+</script>
+</head>
+<!-- Inicio de Body -->
+<body id="formbody">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Counter-Strike</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Inicio</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Información
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="info.html">Información</a></li>
+                <li><a href="counter-strike-1.6.html">Counter Strike 1.6</a></li>
+                <li><a href="counter-strike-condition-zero.html">Counter Strike Condition Zero</a></li>
+                <li><a href="counter-strike-Source.html">Counter Strike Source</a></li>
+                <li><a href="counter-strike-go.html">Counter Strike Global Offensive</a></li>
+              </ul>
+            </li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+            <li><a href="juego.html">Juego</a></li>
+            <li><a href="chat.html">Chat</a></li>
+            <li><a href="vistaproducto.html">Mercado de Skins</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <form action="formulario.html" method="post" id="formulario">
+        <fieldset> <legend> Informacion de usuario </legend>
+          <label for="usuario">Nombre*</label>
+          <span id="obligatorio">El campo "Nombre" es obligatorio</span>
+          <input id="usuario" type="text" class="form-control" name="usuario"> <br />
+          <label for="usuario2">Apellidos*</label>
+          <span id="obligatorio1">El campo "Apellidos" es obligatorio</span>
+          <input id="usuario2" type="text" class="form-control" name="usuario2"> <br />
+          <label for="email">Email*</label>
+          <span id="obligatorio2">El campo "Email" es obligatorio</span>
+          <input id="email" type="email" class="form-control" name="email"> <br />
+          <label for='edad'>Edad*</label>
+          <span id="obligatorio3">El campo "Edad" es obligatorio</span>
+          <input type='number' id='edad' name='edad' /> <br />
+        </fieldset> <br />
+        <fieldset>
+          <label class="sexo">Sexo</label> <br />
+          Hombre <input name="sexo" type="radio"  value="1">
+          Mujer  <input name="sexo" type="radio"  value="2"> <br />
+        </fieldset> <br />
+        <p>Que te ha parecido la pagina web?</p>
+        <div class="checkbox">
+          <label for="checks1"><input type="radio" name="check" id="checks1">Guay</label>
+        </div>
+        <div class="checkbox">
+          <label for="checks2"><input type="radio" name="check" id="checks2">Mi abuela con parkinson lo hace mejor</label>
+        </div>
+        <div class="form-group">
+          <label for="sel1">¿Cual es tu equipo competitivo favorito?*</label>
+          <span id="obligatorio4">Debes seleccionar una opción</span>
+          <select class="form-control" id="sel1" name="sel1">
+            <option value="0">Selecciona una opcion..</option>
+            <option value="1">NiP</option>
+            <option value="2">SK</option>
+            <option value="3">Virtus.pro</option>
+            <option value="4">Cloud9</option>
+
+          </select>
+        </div> <br />
+        <p> ¿Que tipo de jugador eres? </p>
+        <div class="checkbox" id="checkto">
+          <label for="check1"><input type="checkbox" id="check1">Amigable</label>
+        </div>
+        <div class="checkbox">
+          <label for="check2"><input type="checkbox" id="check2">Paquete Matao</label>
+        </div>
+        <div class="checkbox">
+          <label for="check3"><input type="checkbox" id="check3">Campero</label>
+        </div>
+        <div class="checkbox">
+          <label for="check4"><input type="checkbox" id="check4">MLG Player</label>
+        </div>
+        <div class="checkbox">
+          <label for="check5"><input type="checkbox" id="check5">Lager</label>
+        </div>
+        <div class="checkbox">
+          <label for="check6"><input type="checkbox" id="check6">Rager</label>
+        </div> <br />
+        <div class="form-group">
+          <label for="comment">Deja un comentario sobre la pagina:)</label>
+          <textarea class="form-control" rows="3" id="comment"></textarea>
+        </div>
+        <input type="submit" value="Enviar" class="button"/>
+        <input type="reset" value="Restablecer" id="ReiniciarFormulario" /> <br/>
+        <p>*(Son campos obligatorios)</p> <br />
+      </form>
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="tabladatos">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Apellidos</th>
+                  <th>Email</th>
+                  <th>Edad</th>
+                  <th>Equipo Favorito</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-respuestas">
+
+              </tbody>
+            </table> <br/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- final de Body -->
+  </body>
+  </html>
